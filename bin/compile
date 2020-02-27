@@ -65,6 +65,7 @@ else
 fi
 echo "-----> Installing Dependencies using $environmentYMLPath"
 conda env update -n root -f "$environmentYMLPath"
+conda install -c pytorch -c fastai fastai
 
 echo "-----> Listing Python Environment Information..."
 conda list
